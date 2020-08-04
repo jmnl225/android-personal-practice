@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bottomnav1_home"
+        android:title="Home"
+        android:icon="@android:drawable/ic_menu_agenda"/>
+
+    <item android:id="@+id/bottomnav2_save"
+        android:title="Save"
+        android:icon="@android:drawable/ic_menu_save"/>
+
+    <item android:id="@+id/bottomnav3_share"
+        android:title="Share"
+        android:icon="@android:drawable/ic_menu_share"/>
+
+    <item android:id="@+id/bottomnav4_call"
+        android:title="Call"
+        android:icon="@android:drawable/ic_menu_call"/>
+
+    <item android:id="@+id/bottomnav5_help"
+        android:title="Help"
+        android:icon="@android:drawable/ic_menu_help"/>
+
+</menu>

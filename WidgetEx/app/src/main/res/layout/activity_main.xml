@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/img01"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/thumb_moana"/>
+
+        <TextView
+            android:id="@+id/text01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android"
+            android:layout_margin="16dp"
+            android:layout_toRightOf="@+id/img01"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/text02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img01"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            android:text="Heyyy What's up?"/>
+
+        <TextView
+            android:id="@+id/text03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:text="2020.05.19"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/v01"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="#555"/>
+
+        <TextView
+            android:id="@+id/text04"
+            android:layout_alignTop="@+id/v01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's NEWS!"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/text05"
+            android:layout_alignTop="@+id/text04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is an Image from MOANA! Love you"
+            android:layout_marginLeft="20dp"
+            android:layout_marginVertical="16dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/ic"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/v01"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_more_vert_black_24dp"/>
+
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/moana"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:layout_marginVertical="5dp"
+        android:src="@drawable/moana01"
+        android:clickable="true"
+        android:onClick="clickimg"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/ic01"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_favorite_red_30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dp"
+            android:clickable="true"
+            android:onClick="clickic"/>
+
+        <ImageView
+            android:id="@+id/ic02"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chat_bubble_outline_green_30dp"
+            android:layout_alignLeft="@+id/ic01"
+            android:layout_marginLeft="50dp"
+            android:clickable="true"
+            android:onClick="clickic"/>
+
+        <ImageView
+            android:id="@+id/ic03"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_send_black_30dp"
+            android:layout_alignLeft="@+id/ic02"
+            android:layout_marginLeft="50dp"
+            android:clickable="true"
+            android:onClick="clickic"/>
+
+        <ImageView
+            android:id="@+id/ic04"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_file_download_black_30dp"
+            android:clickable="true"
+            android:onClick="clickic"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignBottom="@id/ic02"
+        android:background="#888"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write your descripstion here..."
+        android:layout_margin="16dp"
+        android:background="#fff"
+        android:maxLines="1"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+rootProject.name='XmlPullParserMovie'
+include ':app'

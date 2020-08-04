@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    >
+
+    <ImageView
+        android:id="@+id/moanaimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/moana01"
+        android:clickable="true"
+        android:onClick="next"/>
+
+    <ImageView
+        android:id="@+id/moanaic"
+        android:layout_gravity="center"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@android:drawable/ic_media_play"
+        android:clickable="true"
+        android:onClick="next"/>
+
+</LinearLayout>

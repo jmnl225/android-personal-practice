@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="220dp"
+    android:id="@+id/layout_item2"
+    android:padding="16dp"
+    android:layout_margin="6dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="6dp">
+
+    <ImageView
+        android:id="@+id/recycler_iv"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:src="@drawable/icebg1"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/recycler_tv"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+
+        android:text="여름의 디저트 아이스크림! 콘 아이스크림과 컵 아이스크림 중 누가 더 인기가 많을까?"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_marginTop="6dp"
+        android:padding="6dp"
+        android:textStyle="bold"/>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ffffdddd"
+    tools:context=".Writing">
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/bg_edit"
+        android:hint="제목"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="6dp" />
+
+    <EditText
+        android:id="@+id/et_writer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="6dp"
+        android:maxLines="1"
+        android:hint="작성자"
+        android:background="@drawable/bg_edit"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="글자수 0/500"
+        android:gravity="right"
+        android:padding="4dp"
+        />
+
+    <!--
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rg_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="딸기"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="20dp"/>
+
+        <RadioButton
+            android:id="@+id/rg_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="체리"
+            android:layout_marginRight="15dp"/>
+
+        <RadioButton
+            android:id="@+id/rg_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사과"
+            android:layout_marginRight="15dp"/>
+
+        <RadioButton
+            android:id="@+id/rg_btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수박"
+            android:layout_marginRight="15dp"/>
+
+        <RadioButton
+            android:id="@+id/rg_btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="복숭아"/>
+
+        </RadioGroup>
+-->
+
+
+    <EditText
+        android:id="@+id/et_contents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:padding="8dp"
+        android:background="@drawable/bg_edit"
+        android:inputType="textMultiLine"
+        android:hint="내용"
+        android:maxLength="500"
+        android:layout_marginBottom="8dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="취소"
+            android:background="@drawable/bg_btn"
+            android:layout_marginRight="4dp"
+            android:onClick="clickCancel"/>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="확인"
+            android:background="@drawable/bg_btn"
+            android:layout_marginLeft="4dp"
+            android:onClick="clickOK"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

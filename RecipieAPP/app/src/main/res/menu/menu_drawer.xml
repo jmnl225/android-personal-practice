@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Home"
+        android:id="@+id/home"
+        android:icon="@android:drawable/ic_menu_agenda"/>
+    <item
+        android:title="Gallery"
+        android:id="@+id/gallery"
+        android:icon="@android:drawable/ic_menu_gallery"/>
+    <item
+        android:title="Favorite"
+        android:id="@+id/fav"
+        android:icon="@android:drawable/ic_menu_save"/>
+    <item
+        android:title="Setting"
+        android:id="@+id/setting"
+        android:icon="@android:drawable/ic_menu_manage"/>
+
+    <item android:title="Community">
+        <menu>
+            <item android:title="Send"
+                android:id="@+id/send"
+                android:icon="@android:drawable/ic_menu_send"/>
+            <item android:title="Share"
+                android:icon="@android:drawable/ic_menu_share"/>
+            <item android:title="Friends"
+                android:icon="@android:drawable/ic_menu_preferences"/>
+        </menu>
+    </item>
+
+
+</menu>

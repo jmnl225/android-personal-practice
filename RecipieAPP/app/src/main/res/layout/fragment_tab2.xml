@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tab2_tv"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="올 여름 디저트 후보!"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="8dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tab2_tv"/>
+
+
+        <TextView
+            android:id="@+id/tab2_tv2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="골라먹는 다양한 냉면"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/recycler"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tab2_tv2"/>
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
